@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class Transacao {
 
-    public String email;
-    public String nome;
-    public Produto produto;
+    private String email;
+    private String nome;
+    private Produto produto;
 }

@@ -36,6 +36,7 @@ services:
       - kafka
     networks:
       - estoque
+
   consumer:
     image: openjdk:17-alpine
     ports:
@@ -45,9 +46,10 @@ services:
     working_dir: /app
     command: java -jar consumer.jar
     depends_on:
-      - estoque
+      - api-transacao
     networks:
       - estoque
+
   mysql:
     image: mysql:8.0
     environment:
@@ -58,6 +60,7 @@ services:
     restart: always
     networks:
       - estoque
+
 networks:
   estoque:
     driver: bridge
