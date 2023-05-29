@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/servico-estoque/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/servico-email/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -12,12 +13,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="servico-estoque" />
         <module name="api" />
+        <module name="servico-email" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api" options="-parameters" />
+      <module name="servico-email" options="-parameters" />
       <module name="servico-estoque" options="-parameters" />
     </option>
   </component>

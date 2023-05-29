@@ -50,6 +50,22 @@ services:
     networks:
       - estoque
 
+  email-sender:
+    image: openjdk:17-alpine
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./servico-email/target/servico-email-1.0.jar:/app/email.jar
+    working_dir: /app
+    environment:
+      - EMAIL_ENVIO=teste
+      - EMAIL_SENHA=teste
+    command: java -jar email.jar
+    depends_on:
+      - consumer
+    networks:
+      - estoque
+
   mysql:
     image: mysql:8.0
     environment:
@@ -58,6 +74,8 @@ services:
     ports:
       - "3306:3306"
     restart: always
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - estoque
 
