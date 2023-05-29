@@ -5,7 +5,9 @@ Para conseguir rodar o projeto em sua maquina sem erros primeiramente ira precis
 Se caso nao ha o Docker instalado, podera seguir os passos de instalacao no link a seguir:
 
 For Windows: https://docs.docker.com/desktop/install/windows-install/
+
 For Mac: https://docs.docker.com/desktop/install/mac-install/
+
 For Linux: https://docs.docker.com/engine/install/ubuntu/
 
 Depois de instalado, devera ter uma conta no google mail para fazer a operacao de envio de email rodar corretamente sem erros.
