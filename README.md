@@ -39,4 +39,4 @@ Se caso a quantidade for maior que o numero que existe no estoque, um email de e
 
 Arquitetura do projeto:
 
-    ![teste](https://github.com/Bighetto/SistemaTransacaoEstoque/assets/83975818/acea1a6a-1a75-40b4-9988-25dd38f5f7dc)
+    https://github.com/Bighetto/SistemaTransacaoEstoque/assets/83975818/acea1a6a-1a75-40b4-9988-25dd38f5f7dc
