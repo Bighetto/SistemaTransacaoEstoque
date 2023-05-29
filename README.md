@@ -36,3 +36,7 @@ curl --location 'http://localhost:8080/solicitarTransacao' \
 
 Podera testar o funcionamento do recebimento do email, e verificar no banco de dados se abateu a quantidade certa de Headset Gamer no estoque. 
 Se caso a quantidade for maior que o numero que existe no estoque, um email de erro chegara para o usuario.
+
+Arquitetura do projeto:
+
+    ![teste](https://github.com/Bighetto/SistemaTransacaoEstoque/assets/83975818/acea1a6a-1a75-40b4-9988-25dd38f5f7dc)
