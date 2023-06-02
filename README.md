@@ -18,6 +18,8 @@ https://support.google.com/accounts/answer/185833?visit_id=638209678680891206-28
 depois de configurado corretamente.
 Altere a linha 61 e 62 do arquivo docker-compose para o usuario e senha que foi configurado com a sua conta google mail.
 
+Gere o arquivo .jar de cada servico com o maven. (clean install package).
+
 Apos isso, abra o terminal no diretorio que o docker-compose se encontra e execute o seguinte comando:
 
 docker-compose up -d
